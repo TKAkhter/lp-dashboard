@@ -165,10 +165,6 @@ h5 {
   max-height: 500px;
 }
 
-// .header .border-end {
-//   border-right: 1px solid #17130c !important;
-// }
-
 #brand-overview,
 #brand-audience,
 .main-columns .row,
@@ -188,13 +184,13 @@ canvas {
 }
 
 #brand-block::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background-color: transparent;
 }
 
 #brand-block::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background-color: #ceb183;
+  border-radius: 5px;
+  background-color: #bcbcbc;
 }
 
 #brand-block::-webkit-scrollbar-thumb:hover {
@@ -214,8 +210,44 @@ h6 {
   border-right: 1px solid var(--secondary) !important;
 }
 
+$enable-responsive-font-sizes: true;
+
 @media (max-width: 576px) {
   .min-mobile {
     display: none !important;
+  }
+  .add-options-mobile {
+    flex-direction: column;
+    margin-top: 10px;
+    a {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 10px 0 !important;
+    }
+  }
+  #brand-overview {
+    .row {
+      div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .table {
+    text-align: center;
+  }
+  .nav-mobile {
+    .navbar-nav {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  .nav-desktop {
+    margin-bottom: 0 !important;
+    justify-content: space-around;
+    .navbar-nav {
+      display: none;
+    }
   }
 }
