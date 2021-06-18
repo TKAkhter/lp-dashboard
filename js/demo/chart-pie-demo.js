@@ -62,9 +62,10 @@ window.onload = function () {
       },
     },
   };
-
-  var myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
+  var chartBox = document.getElementById('myChart');
+  if (chartBox) {
+    var myChart = new Chart(chartBox,
+      config
+    );
+  }
 }
