@@ -10,7 +10,7 @@ include('./components/navbar.php');
 // Custom Page content
 ?>
 
-<div class="container-fluid">
+<div class="row">
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4 flex-sm-column flex-lg-row flex-md-column w-100">
