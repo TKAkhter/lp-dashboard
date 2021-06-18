@@ -14,7 +14,7 @@ require('./globals.php');
         <button id="sidebarToggleTop" class="btn sidebar-toggle d-mobile-none">
             <i class="fa fa-bars"></i>
         </button>
-        <a class="d-sm-none d-md-none d-lg-none sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="d-sm-none d-md-none d-lg-none sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo $base_url; ?>/user">
             <div class="">
                 <img src="<?php echo $base_url; ?>img/Loreal Pakistan Logo.png" class="mx-auto img-fluid" alt="L'Oréal pakistan">
             </div>
@@ -25,7 +25,7 @@ require('./globals.php');
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="<?php echo $base_url; ?>/user">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -35,37 +35,33 @@ require('./globals.php');
 
         <!-- Heading -->
         <div class="sidebar-heading">
-            Interface
+            Finance
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Components</span>
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInvoices" aria-expanded="true" aria-controls="collapseInvoices">
+                <i class="fas fa-file-invoice"></i>
+                <span>Invoices</span>
             </a>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div id="collapseInvoices" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Custom Components:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/buttons.html">Buttons</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/cards.html">Cards</a>
+                    <h6 class="collapse-header">Options:</h6>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/invoice.php">Invoices</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/invoice-add.php">Add New</a>
                 </div>
             </div>
         </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                <i class="fas fa-fw fa-wrench"></i>
-                <span>Utilities</span>
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEstimates" aria-expanded="true" aria-controls="collapseEstimates">
+                <i class="fas fa-calculator"></i>
+                <span>Estimates</span>
             </a>
-            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div id="collapseEstimates" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Custom Utilities:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/utilities-color.html">Colors</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/utilities-border.html">Borders</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/utilities-animation.html">Animations</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/utilities-other.html">Other</a>
+                    <h6 class="collapse-header">Options:</h6>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/estimates.php">Estimates</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/estimates-add.php">Add New</a>
                 </div>
             </div>
         </li>
@@ -75,41 +71,72 @@ require('./globals.php');
 
         <!-- Heading -->
         <div class="sidebar-heading">
-            Addons
+            Customer
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Pages</span>
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCustomer" aria-expanded="true" aria-controls="collapseCustomer">
+                <i class="fas fa-users"></i>
+                <span>Customer</span>
             </a>
-            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div id="collapseCustomer" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/login.html">Login</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/register.html">Register</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/404.html">404 Page</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>account/blank.html">Blank Page</a>
+                    <h6 class="collapse-header">Options:</h6>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/customer.php">Customer</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/customer-add.php">Add New</a>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?php echo $base_url; ?>user/profile.php">
+                <i class="far fa-user-circle"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Notification
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNotification" aria-expanded="true" aria-controls="collapseNotification">
+                <i class="far fa-user-circle"></i>
+                <span>Notification</span>
+            </a>
+            <div id="collapseNotification" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Options:</h6>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/alerts.php">Alerts</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>user/messages.php">Messages</a>
                 </div>
             </div>
         </li>
 
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
-            <a class="nav-link" href="<?php echo $base_url; ?>account/charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span></a>
-        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
 
-        <!-- Nav Item - Tables -->
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Admin
+        </div>
+
         <li class="nav-item">
-            <a class="nav-link" href="<?php echo $base_url; ?>account/tables.html">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Tables</span></a>
+            <a class="nav-link collapsed" href="<?php echo $base_url; ?>user/settings.php">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?php echo $base_url; ?>user/activity.php">
+                <i class="fas fa-clipboard-list"></i>
+                <span>Activity Log</span>
+            </a>
         </li>
 
         <!-- Divider -->
@@ -119,15 +146,5 @@ require('./globals.php');
         <div class="text-center d-none d-md-inline">
             <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
-
-        <!-- Sidebar Message -->
-        <div class="sidebar-card d-none d-lg-flex">
-            <img class="sidebar-card-illustration mb-2" src="<?php echo $base_url; ?>img/undraw_rocket.svg" alt="...">
-            <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components,
-                and more!</p>
-            <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to
-                Pro!</a>
-        </div>
-
     </ul>
     <!-- End of Sidebar -->

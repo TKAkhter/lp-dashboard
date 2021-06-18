@@ -10,17 +10,19 @@ include('./components/navbar.php');
 // Custom Page content
 ?>
 
-<div class="row profile-mobile">
+<div class="container-fluid">
+
+    <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4 flex-sm-column flex-lg-row flex-md-column w-100">
-        <h1 class="h3 custom-secondary mb-0">Customer Information</h1>
+        <h1 class="h3 custom-secondary mb-0">Activity</h1>
         <?php include('./components/tabs-add.php'); ?>
     </div>
+    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
+        For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.
+    </p>
 </div>
-<!-- Add include here -->
 
-<?
-// Custom Page content
-
+<?php
 // Must include in every page
 include('./components/footer.php');
 include('./components/scroll-to-top.php');

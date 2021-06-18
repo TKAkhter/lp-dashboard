@@ -23,6 +23,9 @@ require('./globals.php');
     <!-- Custom styles for this template-->
     <link href="<?php echo $base_url; ?>css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this page -->
+    <link href="<?php echo $base_url; ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
