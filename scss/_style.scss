@@ -1,0 +1,334 @@
+// Add custom styles here (scss -> _style.css)
+
+:root {
+  --custom-primary: #c3a064;
+  --custom-secondary: #694a20;
+  --custom-dark: #020202;
+  --custom-light: #f7f8fa;
+  --custom-text: #707176;
+  --custom-inactive: #3e3d3d;
+  --custom-font-family: Gotham;
+}
+
+.custom-primary {
+  color: var(--custom-primary) !important;
+}
+
+.custom-secondary {
+  color: var(--custom-secondary) !important;
+}
+
+.custom-dark {
+  color: var(--custom-dark) !important;
+}
+
+.custom-light {
+  color: var(--custom-light) !important;
+}
+
+.custom-text {
+  color: var(--text) !important;
+}
+
+.custom-inactive {
+  color: var(--inactive) !important;
+}
+
+.custom-bg-primary {
+  background-color: var(--custom-primary) !important;
+}
+
+.custom-bg-secondary {
+  background-color: var(--custom-secondary) !important;
+}
+
+.custom-bg-primary {
+  background-color: var(--custom-primary) !important;
+  border-color: var(--custom-primary) !important;
+}
+
+.custom-bg-secondary {
+  background-color: var(--custom-secondary) !important;
+  border-color: var(--custom-secondary) !important;
+}
+
+.custom-bg-dark {
+  background-color: var(--custom-dark) !important;
+  border-color: var(--custom-dark) !important;
+}
+
+.custom-bg-light {
+  background-color: var(--custom-light) !important;
+  border-color: var(--custom-light) !important;
+}
+
+.custom-bg-text {
+  background-color: var(--text) !important;
+  border-color: var(--custom-text) !important;
+}
+
+.custom-bg-inactive {
+  background-color: var(--inactive) !important;
+  border-color: var(--custom-inactive) !important;
+}
+
+.custom-font {
+  font-family: var(--custom-font-family) !important;
+}
+
+// ==================================
+
+// Toogle Switch
+
+/* The switch - the box around the slider */
+.switch {
+  top: 4px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 0;
+  bottom: -6px;
+  background-color: var(--custom-primary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--custom-secondary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--custom-secondary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+// end Toogle Switch
+
+body * {
+  font-family: var(--custom-font-family);
+  // color: var(--custom-text);
+}
+
+.bg-gradient-primary {
+  background-color: var(--custom-dark);
+  background-image: linear-gradient(
+    180deg,
+    var(--custom-dark) 10%,
+    var(--custom-secondary) 100%
+  );
+}
+
+.btn-primary {
+  background-color: var(--custom-primary);
+  border-color: var(--custom-primary);
+}
+
+.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--custom-secondary);
+  border-color: var(--custom-secondary);
+}
+.btn.sidebar-toggle,
+.btn.sidebar-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.05);
+}
+
+.d-mobile-none {
+  display: none;
+}
+
+.sidebar-brand-icon img {
+  max-width: 200px;
+}
+
+.sidebar-brand {
+  height: 100%;
+}
+
+.nav-link:hover span,
+.nav-link:hover span {
+  color: white;
+}
+
+// =====================================
+
+p {
+  color: var(--custom-text);
+}
+
+.custom-color-secondary,
+h5 {
+  color: var(--custom-secondary) !important;
+}
+
+.box-round {
+  border-radius: 10px;
+}
+
+.extra-padding {
+  padding: 5px 0 0 0;
+}
+
+.inner-block {
+  flex-direction: column;
+  align-items: center;
+}
+
+#brand-block p,
+#brand-overview p {
+  margin: 0;
+}
+
+#brand-overview h4 {
+  padding: 20px 0;
+  margin: 0;
+}
+
+#brand-block {
+  max-height: 500px;
+}
+
+#brand-overview,
+#brand-audience,
+.main-columns .row,
+#brand-block {
+  color: var(--custom-secondary) !important;
+}
+
+canvas {
+  min-width: 150px !important;
+  min-height: 300px !important;
+}
+
+#brand-block::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+#brand-block::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+#brand-block::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #bcbcbc;
+}
+
+#brand-block::-webkit-scrollbar-thumb:hover {
+  background: #856b4a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500 !important;
+}
+
+.border-end {
+  border-right: 1px solid var(--secondary) !important;
+}
+
+td,
+th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+$enable-responsive-font-sizes: true;
+
+@media (max-width: 576px) {
+  .min-mobile {
+    display: none !important;
+  }
+  .add-options-mobile {
+    flex-direction: column;
+    margin-top: 10px;
+    a {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 10px 0 !important;
+    }
+  }
+  #brand-overview {
+    .row {
+      div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .table {
+    text-align: center;
+  }
+  .nav-mobile {
+    .navbar-nav {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  .nav-desktop {
+    margin-bottom: 0 !important;
+    justify-content: space-around;
+    .navbar-nav {
+      display: none;
+    }
+  }
+  .profile-mobile.row {
+    flex-direction: column-reverse;
+    .profile-mobile {
+      width: 50%;
+      margin: 30px auto;
+    }
+  }
+}
