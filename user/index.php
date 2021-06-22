@@ -1,6 +1,7 @@
 <?php
 
 // Must include in every page
+require('./components/is-logged.php');
 require('./globals.php');
 
 $file_name = basename($_SERVER["SCRIPT_FILENAME"], '.php');

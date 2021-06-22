@@ -332,3 +332,9 @@ $enable-responsive-font-sizes: true;
     }
   }
 }
+
+.bg-login-image {
+  background: url(../img/loreal-login-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
