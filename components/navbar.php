@@ -17,7 +17,7 @@ require('./globals.php');
             <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle custom-primary">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo $base_url; ?>user/">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo $base_url; ?>">
                 <div class="sidebar-brand-icon">
                     <img src="<?php echo $base_url; ?>img/Loreal Pakistan Logo.png" class="mx-auto img-fluid" alt="L'Oréal pakistan">
                 </div>
@@ -68,7 +68,7 @@ require('./globals.php');
                         <h6 class="custom-bg-primary dropdown-header">
                             Alerts Center
                         </h6>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/alerts.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>alerts.php">
                             <div class="mr-3">
                                 <div class="icon-circle bg-primary">
                                     <i class="fas fa-file-alt text-white"></i>
@@ -79,7 +79,7 @@ require('./globals.php');
                                 <span class="font-weight-bold">A new monthly report is ready to download!</span>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/alerts.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>alerts.php">
                             <div class="mr-3">
                                 <div class="icon-circle bg-success">
                                     <i class="fas fa-donate text-white"></i>
@@ -90,7 +90,7 @@ require('./globals.php');
                                 $290.29 has been deposited into your account!
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/alerts.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>alerts.php">
                             <div class="mr-3">
                                 <div class="icon-circle bg-warning">
                                     <i class="fas fa-exclamation-triangle text-white"></i>
@@ -101,7 +101,7 @@ require('./globals.php');
                                 Spending Alert: We've noticed unusually high spending for your account.
                             </div>
                         </a>
-                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>user/alerts.php">Show All Alerts</a>
+                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>alerts.php">Show All Alerts</a>
                     </div>
                 </li>
 
@@ -117,7 +117,7 @@ require('./globals.php');
                         <h6 class="custom-bg-primary dropdown-header">
                             Message Center
                         </h6>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="<?php echo $base_url; ?>img/undraw_profile_1.svg" alt="...">
                                 <div class="status-indicator bg-success"></div>
@@ -128,7 +128,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Emily Fowler · 58m</div>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="<?php echo $base_url; ?>img/undraw_profile_2.svg" alt="...">
                                 <div class="status-indicator"></div>
@@ -139,7 +139,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Jae Chun · 1d</div>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="<?php echo $base_url; ?>img/undraw_profile_3.svg" alt="...">
                                 <div class="status-indicator bg-warning"></div>
@@ -150,7 +150,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="...">
                                 <div class="status-indicator bg-success"></div>
@@ -161,7 +161,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Chicken the Dog · 2w</div>
                             </div>
                         </a>
-                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>user/messages.php">Read More Messages</a>
+                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>messages.php">Read More Messages</a>
                     </div>
                 </li>
 
@@ -175,15 +175,15 @@ require('./globals.php');
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?php echo $base_url; ?>user/profile.php">
+                        <a class="dropdown-item" href="<?php echo $base_url; ?>profile.php">
                             <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                             Profile
                         </a>
-                        <a class="dropdown-item" href="<?php echo $base_url; ?>user/settings.php">
+                        <a class="dropdown-item" href="<?php echo $base_url; ?>settings.php">
                             <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                             Settings
                         </a>
-                        <a class="dropdown-item" href="<?php echo $base_url; ?>user/activity.php">
+                        <a class="dropdown-item" href="<?php echo $base_url; ?>activity.php">
                             <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                             Activity Log
                         </a>
@@ -233,7 +233,7 @@ require('./globals.php');
                         <h6 class="custom-bg-primary dropdown-header">
                             Alerts Center
                         </h6>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/alerts.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>alerts.php">
                             <div class="mr-3">
                                 <div class="icon-circle bg-primary">
                                     <i class="fas fa-file-alt text-white"></i>
@@ -244,7 +244,7 @@ require('./globals.php');
                                 <span class="font-weight-bold">A new monthly report is ready to download!</span>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/alerts.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>alerts.php">
                             <div class="mr-3">
                                 <div class="icon-circle bg-success">
                                     <i class="fas fa-donate text-white"></i>
@@ -255,7 +255,7 @@ require('./globals.php');
                                 $290.29 has been deposited into your account!
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/alerts.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>alerts.php">
                             <div class="mr-3">
                                 <div class="icon-circle bg-warning">
                                     <i class="fas fa-exclamation-triangle text-white"></i>
@@ -266,7 +266,7 @@ require('./globals.php');
                                 Spending Alert: We've noticed unusually high spending for your account.
                             </div>
                         </a>
-                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>user/alerts.php">Show All Alerts</a>
+                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>alerts.php">Show All Alerts</a>
                     </div>
                 </li>
 
@@ -282,7 +282,7 @@ require('./globals.php');
                         <h6 class="custom-bg-primary dropdown-header">
                             Message Center
                         </h6>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="<?php echo $base_url; ?>img/undraw_profile_1.svg" alt="...">
                                 <div class="status-indicator bg-success"></div>
@@ -293,7 +293,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Emily Fowler · 58m</div>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="<?php echo $base_url; ?>img/undraw_profile_2.svg" alt="...">
                                 <div class="status-indicator"></div>
@@ -304,7 +304,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Jae Chun · 1d</div>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="<?php echo $base_url; ?>img/undraw_profile_3.svg" alt="...">
                                 <div class="status-indicator bg-warning"></div>
@@ -315,7 +315,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                             </div>
                         </a>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>user/messages.php">
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo $base_url; ?>messages.php">
                             <div class="dropdown-list-image mr-3">
                                 <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="...">
                                 <div class="status-indicator bg-success"></div>
@@ -326,7 +326,7 @@ require('./globals.php');
                                 <div class="small text-gray-500">Chicken the Dog · 2w</div>
                             </div>
                         </a>
-                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>user/messages.php">Read More Messages</a>
+                        <a class="dropdown-item text-center small text-gray-500" href="<?php echo $base_url; ?>messages.php">Read More Messages</a>
                     </div>
                 </li>
 
@@ -340,15 +340,15 @@ require('./globals.php');
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?php echo $base_url; ?>user/profile.php">
+                        <a class="dropdown-item" href="<?php echo $base_url; ?>profile.php">
                             <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                             Profile
                         </a>
-                        <a class="dropdown-item" href="<?php echo $base_url; ?>user/settings.php">
+                        <a class="dropdown-item" href="<?php echo $base_url; ?>settings.php">
                             <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                             Settings
                         </a>
-                        <a class="dropdown-item" href="<?php echo $base_url; ?>user/activity.php">
+                        <a class="dropdown-item" href="<?php echo $base_url; ?>activity.php">
                             <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                             Activity Log
                         </a>

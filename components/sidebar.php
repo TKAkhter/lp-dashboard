@@ -47,8 +47,8 @@ require('./globals.php');
             <div id="collapseInvoices" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Options:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/invoice.php">Invoices</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/invoice-add.php">Add New</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>invoice.php">Invoices</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>invoice-add.php">Add New</a>
                 </div>
             </div>
         </li>
@@ -60,8 +60,8 @@ require('./globals.php');
             <div id="collapseEstimates" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Options:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/estimates.php">Estimates</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/estimates-add.php">Add New</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>estimates.php">Estimates</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>estimates-add.php">Add New</a>
                 </div>
             </div>
         </li>
@@ -83,13 +83,13 @@ require('./globals.php');
             <div id="collapseCustomer" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Options:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/customer.php">Customer</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/customer-add.php">Add New</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>customer.php">Customer</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>customer-add.php">Add New</a>
                 </div>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="<?php echo $base_url; ?>user/profile.php">
+            <a class="nav-link collapsed" href="<?php echo $base_url; ?>profile.php">
                 <i class="far fa-user-circle"></i>
                 <span>Profile</span>
             </a>
@@ -112,8 +112,8 @@ require('./globals.php');
             <div id="collapseNotification" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Options:</h6>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/alerts.php">Alerts</a>
-                    <a class="collapse-item" href="<?php echo $base_url; ?>user/messages.php">Messages</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>alerts.php">Alerts</a>
+                    <a class="collapse-item" href="<?php echo $base_url; ?>messages.php">Messages</a>
                 </div>
             </div>
         </li>
@@ -127,13 +127,13 @@ require('./globals.php');
         </div>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="<?php echo $base_url; ?>user/settings.php">
+            <a class="nav-link collapsed" href="<?php echo $base_url; ?>settings.php">
                 <i class="fas fa-cog"></i>
                 <span>Settings</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="<?php echo $base_url; ?>user/activity.php">
+            <a class="nav-link collapsed" href="<?php echo $base_url; ?>activity.php">
                 <i class="fas fa-clipboard-list"></i>
                 <span>Activity Log</span>
             </a>
